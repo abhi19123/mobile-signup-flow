@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup / Login Flow</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google Sign-In API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="form">
+          <h2>Sign Up</h2>
+          <p>
+            Please Register with an email or sign up to continue using our app.
+          </p>
+          <div class="social-login">
+            <button class="google-login">Login with Google</button>
+            <button class="facebook-login">Login with Facebook</button>
+            <button class="twitter-login">Login with Twitter</button>
+          </div>
+
+          <p>or login with email</p>
+          <input type="email" placeholder="Email" id="email" />
+          <input type="password" placeholder="Password" id="password" />
+          <div class="checkbox">
+            <input type="checkbox" id="privacy" />
+            <label for="privacy">I agree with privacy policy</label>
+          </div>
+          <button class="signup-btn">Sign up</button>
+          <p>Already have an account? <a href="#" id="login-link">Login</a></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
